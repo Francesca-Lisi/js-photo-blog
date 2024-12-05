@@ -1,9 +1,15 @@
+
+body{
+  background-image: url(img/cork.png);
+  height: 100vh
+}
 header{
-  height: 150px;
+  height: 180px;
   background-image: url(img/wall.png);
 }
-
-
+.container{
+  padding-top: 50px;
+}
 /* ------------------------------ GOOGLE FONTS ------------------------------ */
 /*-----------titolo-----------*/
 
@@ -12,7 +18,7 @@ header{
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: italic;
-  font-size: 80px;
+  font-size: 100px;
 
 }
 
@@ -21,13 +27,25 @@ header{
   font-family: "Kalam", serif;
   font-weight: 300;
   font-style: normal;
+  font-size: 18px;
 }
-
-.kalam-regular {
-  font-family: "Kalam", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 
 /* ------------------------------ CARD CUSTOM ------------------------------ */
+.user-card{
+  position: relative;
+  padding: 17px;
+
+  background-color: white;
+}
+
+.user-card img:first-child{
+  position:absolute;
+  top: -8px;
+  right: calc((100% - 36px) / 2);
+}
+
+#image{
+  aspect-ratio: 1;
+  width: 100%;
+  margin-bottom: 15px;
+}
