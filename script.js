@@ -6,6 +6,7 @@ const note = document.querySelector('p')
 const row = document.querySelector('.row')
 const btnClose = document.querySelector('.btn-close')
 const overlay = document.querySelector('.overlay')
+const userCard = document.querySelector('.user-card')
 
 btnClose.addEventListener ('click', closeOverlay)
 

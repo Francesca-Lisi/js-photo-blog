@@ -22,6 +22,12 @@ header{
   z-index: 20;
 }
 
+.img-overlay{
+  width: 700px;
+  aspect-ratio: 1;
+  justify-content: center;
+}
+
 /* ------------------------------ GOOGLE FONTS ------------------------------ */
 /*-----------titolo-----------*/
 
@@ -50,6 +56,7 @@ header{
   background-color: white;
   box-shadow: 10px 10px 5px rgba(49, 54, 68, 0.308);
   aspect-ratio: 415 / 510;
+  transition: transform .3s;
 }
 
 .user-card img:first-child{
@@ -64,3 +71,10 @@ header{
   margin-bottom: 15px;
 }
 
+.user-card:hover{
+  cursor: pointer;
+  rotate: 10deg;
+  transform: scale(1.08);
+  box-shadow: 20px 20px 5px rgba(49, 54, 68, 0.308);
+  z-index: 15;
+}
