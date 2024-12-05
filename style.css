@@ -18,7 +18,7 @@ header{
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: italic;
-  font-size: 100px;
+  font-size: 95px;
 
 }
 
@@ -27,15 +27,17 @@ header{
   font-family: "Kalam", serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 /* ------------------------------ CARD CUSTOM ------------------------------ */
 .user-card{
   position: relative;
   padding: 17px;
-
+  max-height: 505px;
   background-color: white;
+  box-shadow: 10px 10px 5px rgba(49, 54, 68, 0.308);
+  aspect-ratio: 415 / 510;
 }
 
 .user-card img:first-child{
