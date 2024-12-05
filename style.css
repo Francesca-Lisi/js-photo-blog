@@ -1,0 +1,33 @@
+header{
+  height: 150px;
+  background-image: url(img/wall.png);
+}
+
+
+/* ------------------------------ GOOGLE FONTS ------------------------------ */
+/*-----------titolo-----------*/
+
+.playpen-sans {
+  font-family: "Playpen Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 80px;
+
+}
+
+/*-----------testo cards-----------*/
+.kalam-light {
+  font-family: "Kalam", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.kalam-regular {
+  font-family: "Kalam", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* ------------------------------ CARD CUSTOM ------------------------------ */
