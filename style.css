@@ -1,15 +1,27 @@
 
 body{
   background-image: url(img/cork.png);
-  height: 100vh
+  height: 100vh;
+  position: relative;
 }
 header{
   height: 180px;
+  width: 100vw;
   background-image: url(img/wall.png);
 }
 .container{
   padding-top: 50px;
 }
+/* ------------------------------ OVERLAY ------------------------------ */
+
+.overlay{
+  position: absolute;
+  height: 100vw;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.664);
+  z-index: 20;
+}
+
 /* ------------------------------ GOOGLE FONTS ------------------------------ */
 /*-----------titolo-----------*/
 
@@ -51,3 +63,4 @@ header{
   width: 100%;
   margin-bottom: 15px;
 }
+
