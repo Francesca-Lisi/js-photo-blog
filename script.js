@@ -4,7 +4,10 @@ const endpoint = 'https://jsonplaceholder.typicode.com/photos?_limit=6'
 const image = document.getElementById('image');
 const note = document.querySelector('p')
 const row = document.querySelector('.row')
+const btnClose = document.querySelector('.btn-close')
+const overlay = document.querySelector('.overlay')
 
+btnClose.addEventListener ('click', closeOverlay)
 
 //chiamata all'endpoint
 axios.get(endpoint)
@@ -41,3 +44,10 @@ function printCard(card){
   console.log(card)
 }
 
+function closeOverlay() {
+  overlay.classList.add('d-none')
+}
+
+function openOverlay(){
+  overlay.classList.remove('d-none')
+}
