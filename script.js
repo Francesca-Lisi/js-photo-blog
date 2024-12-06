@@ -6,16 +6,43 @@ const note = document.querySelector('p')
 const row = document.querySelector('.row')
 const btnClose = document.querySelector('.btn-close')
 const overlay = document.querySelector('.overlay')
-const userCard = document.querySelector('.user-card')
 
+
+
+//chiude l'overlay
 btnClose.addEventListener ('click', closeOverlay)
+
 
 //chiamata all'endpoint
 axios.get(endpoint)
   .then(response =>{
     row.innerHTML = ''
-
     response.data.forEach(card => printCard(card));
+    const userCard = document.querySelectorAll('.user-card');
+    console.log(userCard)
+    imgOverlay = ''
+    for (let card of userCard){
+        console.log(card)
+        card.addEventListener('click', (event) => {  
+          overlay.classList.remove('d-none')
+          let imageOver = `<img src="${event.target.src}" alt="img" class=" mx-auto d-block">`;
+          document.querySelector('.img-overlay').innerHTML = imageOver
+
+
+
+        //   let imgOverlay = 
+        //   imgOverlay = ''
+        //   overlay.classList.remove('d-none')
+        //   imgOverlay.innerHTML = `<img src="${event.targ}" alt="img" class=" mx-auto d-block">`;
+        })
+      }
+
+    // console.log(response.data)
+    // response.data.forEach(element => {
+    //   const {id, url} = response.data;
+    //   console.log(userCard)
+      
+    // })
   })
 
 
@@ -31,7 +58,7 @@ function printCard(card){
     return `${firstLetter}${word.substring(1).toLowerCase()}`
   })
   const capitalizedString = capitalizedWords.join(' ')
-  console.log (capitalizedWords)
+
   
   row.innerHTML += 
       `<div class="col col-12 col-md-6 col-lg-4">
@@ -42,13 +69,19 @@ function printCard(card){
         </div>
       </div>`;
 
-  console.log(card)
+  //console.log(card)
 }
+
+
+
+
+
 
 function closeOverlay() {
   overlay.classList.add('d-none')
 }
 
-function openOverlay(){
-  overlay.classList.remove('d-none')
-}
+//  function openOverlay(address){
+//   overlay.classList.remove('d-none')
+//   imgOverlay.innerHTML = `<img src="${address}" alt="img" class=" mx-auto d-block">`;
+//  }

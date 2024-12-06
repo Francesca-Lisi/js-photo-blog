@@ -23,7 +23,6 @@ header{
 }
 
 .img-overlay{
-  width: 700px;
   aspect-ratio: 1;
   justify-content: center;
 }
