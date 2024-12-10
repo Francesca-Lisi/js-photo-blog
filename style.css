@@ -53,7 +53,7 @@ header{
   padding: 17px;
   max-height: 505px;
   background-color: white;
-  box-shadow: 10px 10px 5px rgba(49, 54, 68, 0.308);
+  box-shadow: 10px 10px 5px rgba(49, 54, 68, 0.308); /*destra sotto blur */
   aspect-ratio: 415 / 510;
   transition: transform .3s;
 }

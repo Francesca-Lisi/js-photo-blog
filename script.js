@@ -23,26 +23,19 @@ axios.get(endpoint)
     imgOverlay = ''
 
     for (let card of userCard){
-      console.log(card.children[1].src)
       let image = card.children[1].src;
       console.log(image)
-      card.addEventListener('click', (event) => {  
 
+      card.addEventListener('click', (event) => {  
         console.log(image)
         overlay.classList.remove('d-none')
         let imageOver = `<img src="${image}" alt="img" class=" mx-auto d-block">`;
         document.querySelector('.img-overlay').innerHTML = imageOver
-
-
-
-      
       })
+
     }
 
-
   })
-
-
 
 
 // scrivo la funzione per stampare le card
@@ -71,14 +64,6 @@ function printCard(card){
 
 
 
-
-
-
 function closeOverlay() {
   overlay.classList.add('d-none')
 }
-
-//  function openOverlay(address){
-//   overlay.classList.remove('d-none')
-//   imgOverlay.innerHTML = `<img src="${address}" alt="img" class=" mx-auto d-block">`;
-//  }
